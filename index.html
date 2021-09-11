@@ -10,111 +10,116 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="movie-container">
-      <label for="movie">Select a Movie</label>
-      <select name="movie-name" id="movie">
-        <option value="100">The White Tiger</option>
-        <option value="150">21 & Over Finally</option>
-        <option value="200">Hangover</option>
-        <option value="250">Gangs of Wasseypur</option>
-      </select>
-    </div>
-    <div class="showcase">
-      <h2>Seats info</h2>
-    <ul >
-      <li>
-        <div class="seat"></div>
-        <small>N/A</small>
-      </li>
-      <li>
-        <div class="seat selected"></div>
-        <small>Selected</small>
-      </li>
-      <li>
-        <div class="seat occupied"></div>
-        <small>Occupied</small>
-      </li>
-    </ul>
-  </div>
-    <div class="screen-container">
-      <div class="screen"></div>
-      <div class="group">
-        <div class="column-group">
-          <p>01</p>
-          <p>02</p>
-          <p>03</p>
-          <p>04</p>
-          <p>05</p>
-          <p>VIP</p>
-        </div>
-        <div class="row-group">
-          <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-          </div>
-          <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat selected"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-          </div>
-          <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat selected"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-          </div>
-          <div class="row">
-            <div class="seat selected"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-          </div>
-          <div class="row">
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat occupied"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-            <div class="seat"></div>
-          </div>
-          <div class="row">
-            <div class="large seat occupied"></div>
-            <div class="large seat"></div>
-            <div class="large seat"></div>
-            <div class="large seat selected"></div>
-          </div>
-        </div>
-        <div class="column-group">
-          <p>01</p>
-          <p>02</p>
-          <p>03</p>
-          <p>04</p>
-          <p>05</p>
-          <p>VIP</p>
-        </div>
+    <div class="container">
+      <div class="movie-container">
+        <label for="movie">Select a Movie</label>
+        <select name="movie-name" id="movie" onchange="jsfunc1()">
+          <option value="100">The White Tiger = $100</option>
+          <option value="150">21 & Over Finally = $150</option>
+          <option value="200">Hangover = $200</option>
+          <option value="250">Gangs of Wasseypur = $250</option>
+        </select>
       </div>
-      
-     
+      <div class="showcase">
+        <h2>Seats info</h2>
+      <ul >
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
     </div>
-  
+      <div class="screen-container">
+        <div class="screen"></div>
+        <div class="group">
+          <div class="column-group">
+            <p>01</p>
+            <p>02</p>
+            <p>03</p>
+            <p>04</p>
+            <p>05</p>
+            <p>VIP</p>
+          </div>
+          <div class="row-group">
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat selected"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat selected"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat selected"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="large seat occupied"></div>
+              <div class="large seat"></div>
+              <div class="large seat"></div>
+              <div class="large seat selected"></div>
+            </div>
+          </div>
+          <div class="column-group">
+            <p>01</p>
+            <p>02</p>
+            <p>03</p>
+            <p>04</p>
+            <p>05</p>
+            <p>VIP</p>
+          </div>
+        </div>
+        
+        <p class="text">
+          You have selected <span id="count">0</span> seats for a price of $
+          <span id="total">0</span>
+        </p>
+      </div>
+    </div>
   </body>
+  <script src="./scripts/script.js"></script>
 </html>

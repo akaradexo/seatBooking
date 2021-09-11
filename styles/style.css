@@ -20,7 +20,10 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--dark-text);
+  background-image: url(../assests/the-white-tiger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +31,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--white);
+
 }
 .group{
   display: flex;
@@ -110,7 +114,7 @@ select {
   transform: scale(1);
 }
 .showcase {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.342);
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -154,3 +158,44 @@ select {
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
+p.text {
+  margin: 5px 0;
+  text-align: center;
+  color: #24272c;
+  background-color: #d3f36a;
+  padding: 0.4rem ;
+  border-radius: 1.5rem;
+}
+
+p.text span {
+  color: var(--occupied);
+}
+
+.container{
+  padding: 2rem;
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+
+body.active1{
+  background-image: url(../assests/21&oover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.active2{
+  background-image: url(../assests/hangover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.active3{
+  background-image: url(../assests/gangs-of-wasseypur-i.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

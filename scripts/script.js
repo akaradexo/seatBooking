@@ -38,10 +38,13 @@ const updateSelectedCount = function () {
 
 function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
-  if (selectedSeats !== null && selectedSeats.length > 0) {
+  if (selectedSeats !== null && selectedSeats.length >= 0) {
     seats.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) {
         seat.classList.add('selected');
+      }
+      else{
+        seat.classList.remove('selected');
       }
     });
   }
@@ -72,3 +75,38 @@ container.addEventListener('click', (e) => {
 
 //initial count and total setMovieData
 updateSelectedCount();
+
+
+
+// theme changer
+function jsfunc1(){
+var body=document.querySelector('body');
+
+ if(document.getElementById('movie').value === '100'){
+ 
+  body.classList.remove('active1');
+  body.classList.remove('active2');
+  body.classList.remove('active3');
+
+}
+else if(document.getElementById('movie').value === '150'){
+  
+  body.classList.add('active1');
+  body.classList.remove('active2');
+  body.classList.remove('active3');
+}
+
+else if(document.getElementById('movie').value === '200'){
+  
+  body.classList.add('active2');
+  body.classList.remove('active1');
+  body.classList.remove('active3'); 
+
+}
+else if(document.getElementById('movie').value === '250'){
+  
+  body.classList.add('active3'); 
+  body.classList.remove('active2');
+  body.classList.remove('active1');
+
+}}
